@@ -4,6 +4,8 @@ const app = express();
 const port = process.env?.PORT || 8000;
 const supportGroupRouter = require("./src/routes/support-group.route");
 
+app.use(express.json())
+
 
 
 app.get("/", (req, res) => {
